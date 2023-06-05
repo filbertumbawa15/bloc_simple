@@ -1,4 +1,6 @@
-import 'package:denice_ti4mb/ui/table_resto_index_page.dart';
+import 'package:denice_ti4mb/ui/table_resto/table_resto_page.dart';
+import 'package:denice_ti4mb/ui/table_resto/table_resto_index_page.dart';
+import 'package:denice_ti4mb/ui/table_resto/table_resto_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -26,7 +28,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      home: TableRestoIndexPage(),
+      home: TableRestoPage(),
     );
   }
 }
