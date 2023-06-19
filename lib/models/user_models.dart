@@ -8,7 +8,8 @@ class UserModel {
   String? password1;
   String? password2;
 
-  UserModel({
+  UserModel(
+    {
     required this.username,
     required this.email,
     required this.isActive,
@@ -20,7 +21,7 @@ class UserModel {
   });
   UserModel.fromJson(Map<String, dynamic> json) {
     username = json['username'];
-    email = json[email];
+    email = json['email'];
     isActive = json['is_active'];
     isWaitress = json['is_waitress'];
     firstName = json['first_name'];

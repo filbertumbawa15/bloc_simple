@@ -9,6 +9,7 @@ part 'register_waitress_state.dart';
 
 class RegisterWaitressBloc
     extends Bloc<RegisterWaitressEvent, RegisterWaitressState> {
+  final authRepository = AuthRepository();
   RegisterWaitressBloc() : super(RegisterWaitressInitial()) {
     on<CreateWaitressEvent>(_registerWaitress);
   }
@@ -28,7 +29,7 @@ class RegisterWaitressBloc
     emit(RegisterWaitressLoading());
     try {
       RegisterUserResponse response =
-          await AuthRepository().registerWaitress(params);
+          await authRepository.registerWaitress(params);
       emit(RegisterWaitressSuccess(registerUserResponse: response));
     } catch (e) {
       emit(RegisterWaitressError(message: e.toString()));

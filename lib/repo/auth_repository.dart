@@ -7,6 +7,7 @@ import 'package:flutter/cupertino.dart';
 class AuthRepository extends ApiClient {
   Future<RegisterUserResponse> registerWaitress(RegisterUserParam param) async {
     try {
+      
       final response = await dio.post('v1/register', data: param.toJson());
       debugPrint("POST Register: ${response.data}");
       return RegisterUserResponse.fromJson(response.data);

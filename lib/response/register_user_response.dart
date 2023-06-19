@@ -2,7 +2,7 @@ import '../models/user_models.dart';
 
 class RegisterUserResponse {
   final UserModel? userModel;
-  final String? message;
+  final String message;
 
   RegisterUserResponse({required this.userModel, required this.message});
 

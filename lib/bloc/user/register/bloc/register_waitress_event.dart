@@ -4,14 +4,14 @@ part of 'register_waitress_bloc.dart';
 abstract class RegisterWaitressEvent {}
 
 class CreateWaitressEvent extends RegisterWaitressEvent {
-  String? username;
-  String? email;
-  bool? isActive;
-  bool? isWaitress;
-  String? firstName;
-  String? lastName;
-  String? password1;
-  String? password2;
+  String username;
+  String email;
+  bool isActive;
+  bool isWaitress;
+  String firstName;
+  String lastName;
+  String password1;
+  String password2;
 
   CreateWaitressEvent(
       {required this.username,

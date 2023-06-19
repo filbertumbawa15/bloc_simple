@@ -1,12 +1,12 @@
 class RegisterUserParam {
-  String? username;
-  String? email;
-  bool? isActive;
-  bool? isWaitress;
-  String? firstName;
-  String? lastName;
-  String? password1;
-  String? password2;
+  String username;
+  String email;
+  bool isActive;
+  bool isWaitress;
+  String firstName;
+  String lastName;
+  String password1;
+  String password2;
 
   RegisterUserParam(
     this.username,
