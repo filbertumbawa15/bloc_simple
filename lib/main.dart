@@ -1,6 +1,7 @@
 import 'package:denice_ti4mb/ui/table_resto/table_resto_page.dart';
 import 'package:denice_ti4mb/ui/table_resto/table_resto_index_page.dart';
 import 'package:denice_ti4mb/ui/table_resto/table_resto_page.dart';
+import 'package:denice_ti4mb/ui/user/login_waitress__page.dart';
 import 'package:denice_ti4mb/ui/user/register_waitress__page.dart';
 import 'package:flutter/material.dart';
 
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      home: RegisterWaitressPage(),
+      home: LoginWaitressPage(),
     );
   }
 }

@@ -7,7 +7,8 @@ class TableRestoRepository extends ApiClient {
   Future<TableRestoResponse> getAllTableResto() async {
     try {
       final response = await dio.get('table-resto');
-      debugPrint('Hasil Response: ${response.data['data']}');
+
+      // debugPrint('Hasil Response: ${response.data['data']}');
       return TableRestoResponse.fromJson(response.data['data']);
     } on DioError catch (e) {
       throw e.toString();
